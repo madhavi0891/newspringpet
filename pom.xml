@@ -18,12 +18,8 @@
 
 	<modules>
 		<module>spring-petclinic-admin-server</module>
-		<module>spring-petclinic-customers-service</module>
-		<module>spring-petclinic-vets-service</module>
-		<module>spring-petclinic-visits-service</module>
 		<module>spring-petclinic-config-server</module>
 		<module>spring-petclinic-discovery-server</module>
-		<module>spring-petclinic-api-gateway</module>
 	</modules>
 
 	<profiles>
@@ -59,7 +55,7 @@
 										<encoding.source>${project.build.sourceEncoding}</encoding.source>
 										<encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
 										<java.source>${maven.compiler.source}</java.source>
-										<java.target>${maven.compiler.target}</java.target>
+										<java.target>1.8</java.target>
 									</additionalProperties>
 								</configuration>
 							</execution>
